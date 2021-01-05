@@ -1,0 +1,16 @@
+<!--page/one/index.wxml-->
+<view class="page">
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="pages page-left">
+        <view>左边页面👈</view>
+    </view>
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="pages page-right"
+        style="{{pageShow}}">
+        👉右边页面
+        <image bindtap="chart" src="../../images/home.png" class="buttons chart" mode="widthFix"></image>
+    </view>
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" bind:tap="backPage"
+        class="pages page-center" style="{{translate}}">
+        <image catch:tap="setting" src="../../images/setting.png" class="buttons setting"></image>
+        <image catch:tap="chart" src="../../images/chart.png" class="buttons chart"></image>
+    </view>
+</view>

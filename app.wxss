@@ -1,0 +1,52 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+.pages{
+  z-index: 0;
+  height: 100%;
+  width: 750rpx;
+  position: fixed; 
+}
+
+.page-left{
+  background-color: #48c4da;
+}
+.page-right{
+  background-color: #ebdb82;
+}
+.page-center{
+  background-color: #f5f5f5;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.buttons{
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+  top: 10rpx;
+  padding: 10rpx;
+}
+.setting{
+  left: 10rpx;
+}
+.chart{
+  right: 10rpx;
+}
+
+.c-state1{
+  transform: rotate(0deg) scale(1) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
+}
+.c-state2{
+  transform: rotate(0deg) scale(.8) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(.8) translate(75%,0%); 
+}
